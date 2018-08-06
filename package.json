@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/pkwenda/typewriter_terminal/issues"
   },
-  "homepage": "https://github.com/pkwenda/typewriter_terminal#readme"
+  "homepage": "https://github.com/pkwenda/typewriter_terminal#readme",
+  "dependencies": {
+    "shelljs": "^0.8.2"
+  }
 }
