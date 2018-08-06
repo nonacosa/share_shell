@@ -1,0 +1,29 @@
+{
+  "name": "typewriter_terminal",
+  "version": "1.0.0",
+  "description": "is a plug-in to Generate printer style's .html file to show our terminal operation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pkwenda/typewriter_terminal.git"
+  },
+  "keywords": [
+    "plugIn",
+    "plug-in",
+    "pinter",
+    "css",
+    "generate",
+    "html",
+    "shell",
+    "terminal"
+  ],
+  "author": "sis.nonacosa@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pkwenda/typewriter_terminal/issues"
+  },
+  "homepage": "https://github.com/pkwenda/typewriter_terminal#readme"
+}
