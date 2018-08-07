@@ -32,8 +32,7 @@ tw --version || tw -v
 
 ```shell
  # 例如想 docker ps -a 秀一波你的docker容器
- tw share "docker ps -a" 或 tw s "docker ps -a"
- # 默认会生成一个 share_you_shell.html 到你执行命令的目录 打开即可分享 online 版本 2.0 提供
+ tw share "docker ps -a" 或 tw s "docker ps -a"  # 默认生成 share_you_shell.html 到当前目录  
  
  # 指定路径
  
@@ -50,6 +49,4 @@ tw --version || tw -v
 
 > 源自 [youtube](https://www.youtube.com/watch?v=NPbiyTVU6YA&lc=z23fgjp5zvjyspkx504t1aokgij4o0rzwvzjn3zexosirk0h00410.1533224892000721) 一段对话 ,感兴趣的可以关注一波
 
-
-![flag](http://op0c7euw0.bkt.clouddn.com/D6FCC662-038B-4557-8A64-AF0DB6B3EEB5.png)
-
+ 
