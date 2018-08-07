@@ -31,6 +31,7 @@
   "homepage": "https://github.com/pkwenda/typewriter_terminal#readme",
   "dependencies": {
     "commander": "^2.17.0",
+    "fs-extra": "^7.0.0",
     "shelljs": "^0.8.2",
     "string": "^3.3.3"
   }

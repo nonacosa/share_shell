@@ -28,8 +28,8 @@ program
         // console.log(typeof exec_shell.exec);
         exec_shell.exec(cmd, (res) => {
 
-            var lines = S(res).lines()
-            console.log(lines)
+            var res_arr = S(res).lines()
+            console.log(res_arr)
         })
     }).on('--help', function () {
         //这里输出子命令的帮助
