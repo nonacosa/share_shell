@@ -15,7 +15,6 @@ var toTypedFormat = function (orgin) {
         }
 
     })
-    console.log(result)
     return result;
 
 }

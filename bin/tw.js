@@ -20,17 +20,18 @@ program
     //说明
     .description('Enter the "shell" you want to convert and include it in \" \"  ')
     //resume的子命令
-    // .option("-n, --name <mode>", "输出我的名字")
+    .option("-p, --path <path>", "Enter you html path , default ./share_you_shell.html")
     //注册一个callback函数
     .action(function (cmd, options) {
-        var nm = typeof options.name == 'string' ? options.name : ""
+        var path = typeof options.path == 'string' ? options.path : "./share_you_shell.html"
 
-        console.log(cmd, nm);
+        console.log('cmd, path');
+        console.log(cmd, path);
         exec_shell.exec(cmd, (res) => {
 
             var res_arr = S(res).lines()
             let str = format.toTypedFormat([cmd].concat(res_arr))
-            file.mkfile(str)
+            file.mkfile(str, path)
         })
     }).on('--help', function () {
         //这里输出子命令的帮助
