@@ -5,6 +5,7 @@ var appInfo = require('../package.json');
 var shell = require('shelljs');
 var S = require('string');
 var format = require('./format');
+var file = require('./file');
 
 program
     .version(appInfo.version)
@@ -25,13 +26,11 @@ program
         var nm = typeof options.name == 'string' ? options.name : ""
 
         console.log(cmd, nm);
-        // console.log(exec_shell.exec);
-        // console.log(typeof exec_shell.exec);
         exec_shell.exec(cmd, (res) => {
 
             var res_arr = S(res).lines()
-            format.toTypedFormat([cmd].concat(res_arr))
-            // console.log(res_arr)
+            let str = format.toTypedFormat([cmd].concat(res_arr))
+            file.mkfile(str)
         })
     }).on('--help', function () {
         //这里输出子命令的帮助

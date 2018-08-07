@@ -6,7 +6,6 @@ if (!shell.which('git')) {
 }
 shell.exec('docker ps -a', function (code, stdout, stderr) {
     if (code === 0) {
-        console.log('code === 0')
         console.log(stdout)
     } else {
         console.log(stderr)

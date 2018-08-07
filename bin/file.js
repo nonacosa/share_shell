@@ -1,11 +1,16 @@
 var fs = require('fs-extra')
+var format = require('./format')
 
 // fs.mkdirs('/Users/zhuang/Desktop/test.html')
 
 // With async/await:
-async function mkfile(f) {
+async function mkfile(str) {
+    let f = '/Users/zhuang/Desktop/test2.html'
     try {
-        await fs.outputFile(f, 'hello!')
+        console.log('-----')
+        console.log(str)
+        console.log(format.toHtmlFormat(str))
+        await fs.outputFile(f, format.toHtmlFormat(str))
 
         const data = await fs.readFile(f, 'utf8')
 
@@ -15,4 +20,4 @@ async function mkfile(f) {
     }
 }
 
-mkfile('/Users/zhuang/Desktop/test.html')
+module.exports.mkfile = mkfile
