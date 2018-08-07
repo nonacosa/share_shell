@@ -2,14 +2,18 @@ var shell = require('shelljs');
 
 
 
-var exec = shell.exec('docker ps -a', function (code, stdout, stderr) {
-    if (code === 0) {
-        console.log('code === 0')
-        console.log(stdout)
-    } else {
-        console.log(stderr)
-    }
-});
+var exec_fn = function (cmd, fn) {
 
-module.exports.exec = exec;
+    shell.exec(cmd, function (code, stdout, stderr) {
+        if (code === 0) {
+            console.log('code === 0')
+            // console.log(stdout)
+            fn(stdout)
+        } else {
+            console.log(stderr)
+        }
+    });
+}
+
+module.exports.exec = exec_fn;
 

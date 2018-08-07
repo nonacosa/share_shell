@@ -2,7 +2,7 @@
 var program = require('commander');
 var exec_shell = require('./exec_shell');
 var appInfo = require('../package.json');
-
+var shell = require('shelljs');
 program
     .version(appInfo.version)
     .usage('这里是我私人玩耍的命令哦！[options] <package>')
@@ -22,8 +22,11 @@ program
         var nm = typeof options.name == 'string' ? options.name : ""
 
         console.log(cmd, nm);
-        console.log(exec_shell.exec);
-        exec_shell.exec(cmd)
+        // console.log(exec_shell.exec);
+        console.log(typeof exec_shell.exec);
+        exec_shell.exec(cmd, (res) => {
+            console.log(res)
+        })
     }).on('--help', function () {
         //这里输出子命令的帮助
         console.log('  Examples:');
