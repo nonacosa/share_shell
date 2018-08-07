@@ -11,7 +11,7 @@ var toTypedFormat = function (orgin) {
         } else if (index === orgin.length - 1) {
             result += " end     :) \\n"
         } else {
-            result += "`" + res + "`" + "^100\\n"
+            result += "`" + res + "`" + "^10\\n"
         }
 
     })
@@ -21,10 +21,11 @@ var toTypedFormat = function (orgin) {
 
 var toHtmlFormat = function (type_arr_str) {
     var html = ""
-    const header = "<html><head><script src='https://cdn.jsdelivr.net/npm/typed.js@2'></script></head><body><pre style='background-color: black;color: white; height:800px' id='app'></pre></body>"
+    const header = "<html><head><script src='https://cdn.jsdelivr.net/npm/typed.js@2'></script>  <script src='https://code.jquery.com/jquery-1.11.3.js'></script>    </head><body><pre style='background-color: black;color: white;' id='app'></pre></body>"
     let script =
         "\n<script>\n"
         + "var source_arr = [ \" " + type_arr_str + " \" ]\n" + "var app = new Typed('#app', {strings: source_arr,typeSpeed: 1,loop: false});"
+        // + "\nwindow.setInterval(function(){$('body').scrollTop(100000)},10);"
         + "\n</script>\n"
     html += header
     html += script + "\n</html>"
