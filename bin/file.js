@@ -3,7 +3,7 @@ var fs = require('fs-extra')
 // fs.mkdirs('/Users/zhuang/Desktop/test.html')
 
 // With async/await:
-async function example(f) {
+async function mkfile(f) {
     try {
         await fs.outputFile(f, 'hello!')
 
@@ -15,4 +15,4 @@ async function example(f) {
     }
 }
 
-example('/Users/zhuang/Desktop/test.html')
+mkfile('/Users/zhuang/Desktop/test.html')
