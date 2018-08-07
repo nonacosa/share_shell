@@ -1,4 +1,4 @@
-- typewriter_terminal ---- share your shell on html  
+- share_shell ---- share your shell on html  
 
 - todo -- [online](https://github.com/pkwenda/new-bee)
 

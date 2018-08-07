@@ -1,5 +1,5 @@
 {
-  "name": "typewriter_terminal",
+  "name": "share_shell",
   "version": "1.0.0",
   "description": "is a plug-in to Generate printer style's .html file to show our terminal operation.",
   "main": "index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pkwenda/typewriter_terminal.git"
+    "url": "git+https://github.com/pkwenda/share_shell.git"
   },
   "keywords": [
     "plugIn",
@@ -26,9 +26,9 @@
   "author": "sis.nonacosa@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pkwenda/typewriter_terminal/issues"
+    "url": "https://github.com/pkwenda/share_shell/issues"
   },
-  "homepage": "https://github.com/pkwenda/typewriter_terminal#readme",
+  "homepage": "https://github.com/pkwenda/share_shell#readme",
   "dependencies": {
     "commander": "^2.17.0",
     "fs-extra": "^7.0.0",
