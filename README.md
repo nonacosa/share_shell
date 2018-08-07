@@ -1,4 +1,4 @@
-## share_shell ---- 在网页上展示你的终端
+## share_shell    😆     在网页上展示你的终端
 
 - 安装
 
@@ -31,10 +31,17 @@ tw --version || tw -v
  
  tw share "ls -all" -p /usr/local/html/share_shell.html  #自动创建文件，存在默认覆盖
 
+```
 
-- todo -- [online](https://github.com/pkwenda/new-bee)
 
-- why and idea  
+- 何时推出2.0在线分享依托站点在哪？
+
+ > 2.0 online 服务将由我的这个 [开源论坛](https://github.com/pkwenda/new-bee) 提供online分享服务
+ 
+- 为什么做这个？灵感是什么？ 
+
+> 源自 [youtube](https://www.youtube.com/watch?v=NPbiyTVU6YA&lc=z23fgjp5zvjyspkx504t1aokgij4o0rzwvzjn3zexosirk0h00410.1533224892000721) 一段对话 ,感兴趣的可以关注一波
+
 
 ![flag](http://op0c7euw0.bkt.clouddn.com/D6FCC662-038B-4557-8A64-AF0DB6B3EEB5.png)
 
