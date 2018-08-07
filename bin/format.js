@@ -7,15 +7,17 @@ var toTypedFormat = function (orgin) {
     }
     _.each(orgin, (res, index) => {
         if (index === 0) {
-            result += res + "^1000\n"
+            result += res + "^1000\\n"
+        } else if (index === orgin.length - 1) {
+            result += " end     :) \\n"
+        } else {
+            result += "`" + res + "`" + "^100\\n"
         }
-        result += "`" + res + "`" + "^1000\n"
 
-        if (index === orgin.length) {
-            result += " end  \n :) \n"
-        }
     })
     console.log(result)
     return result;
 
 }
+
+module.exports.toTypedFormat = toTypedFormat

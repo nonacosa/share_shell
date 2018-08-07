@@ -4,6 +4,7 @@ var exec_shell = require('./exec_shell');
 var appInfo = require('../package.json');
 var shell = require('shelljs');
 var S = require('string');
+var format = require('./format');
 
 program
     .version(appInfo.version)
@@ -29,7 +30,8 @@ program
         exec_shell.exec(cmd, (res) => {
 
             var res_arr = S(res).lines()
-            console.log(res_arr)
+            format.toTypedFormat([cmd].concat(res_arr))
+            // console.log(res_arr)
         })
     }).on('--help', function () {
         //这里输出子命令的帮助
