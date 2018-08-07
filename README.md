@@ -1,3 +1,11 @@
+ 
+ 
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://img.shields.io/badge/build-passing-brightgreen.svg)
+ <a href="https://github.com/pkwenda/share_shell/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-4EB1BA.svg?style=flat-square" alt="Build Status"></a>
+ [![Build Status](https://img.shields.io/badge/version-1.0.0-green.svg)](https://www.npmjs.com/package/share_shell)
+ 
+ 
+
 ## share_shell    😆     在网页上展示你的终端
 
 - 安装
