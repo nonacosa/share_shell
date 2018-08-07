@@ -6,7 +6,7 @@ var exec_fn = function (cmd, fn) {
 
     shell.exec(cmd, function (code, stdout, stderr) {
         if (code === 0) {
-            console.log('code === 0')
+            // console.log('code === 0')
             // console.log(stdout)
             fn(stdout)
         } else {
