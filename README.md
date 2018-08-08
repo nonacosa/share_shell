@@ -6,7 +6,7 @@
  
  
 
-## share_shell    😆     在网页上展示你的终端
+## share_shell    😆     share your shell on html
 
 - 安装
 
