@@ -31,6 +31,7 @@ tw --version || tw -v
 - 使用
 
 ```shell
+ # tw share "要展示的命令" -p "路径"
  # 例如想 docker ps -a 秀一波你的docker容器
  tw share "docker ps -a" 或 tw s "docker ps -a"  # 默认生成 share_you_shell.html 到当前目录  
  
