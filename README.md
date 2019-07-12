@@ -7,15 +7,15 @@
  
  
 
-## share_shell    😆     share your shell on html
+## share_shell         share your shell on html
 
-- 安装
+### 安装
 
 ```shell
   sudo npm install share_shell -g
 ```
 
-- 帮助
+### 帮助
 
 ```shell
   tw --help   #1.0暂时用这个命令，没想到好的缩写
@@ -23,13 +23,13 @@
 
 ![tw --help](http://op0c7euw0.bkt.clouddn.com/share_shell.png)
 
-- 查看版本
+### 查看版本
 
 ```shell
 tw --version || tw -v
 ```
 
-- 使用
+### 使用
 
 ```shell
  # tw share "要展示的命令" -p "路径"
@@ -43,9 +43,6 @@ tw --version || tw -v
 ```
 
 
-- 何时推出2.0在线分享依托站点在哪？
-
- > 2.0 online 服务将由我的这个 [开源论坛](https://github.com/pkwenda/new-bee) 提供online分享服务
  
 - 为什么做这个？灵感是什么？ 
 
